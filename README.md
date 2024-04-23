@@ -1,11 +1,17 @@
-![Nodemailer](https://raw.githubusercontent.com/nodemailer/nodemailer/master/assets/nm_logo_200x136.png)
+# nodemailer-shared
 
-Send e-mails from Node.js – easy as cake! 🍰✉️
+Shared methods for the [Nodemailer](https://github.com/nodemailer/nodemailer) stack.
 
-<a href="http://badge.fury.io/js/nodemailer"><img src="https://badge.fury.io/js/nodemailer.svg" alt="NPM version" height="18"></a> <a href="https://www.npmjs.com/package/nodemailer"><img src="https://img.shields.io/npm/dt/nodemailer.svg" alt="NPM downloads" height="18"></a>
+## Methods
 
-See [Nodemailer](https://nodemailer.com/) homepage for details.
+  * `parseConnectionUrl(str)` parses a connection url into a nodemailer configuration object
+  * `getLogger(options)` returns a bunyan compatible logger instance
+  * `callbackPromise(resolve, reject)` returns a promise-resolving function suitable for using as a callback
+  * `resolveContent(data, key, callback)` converts a key of a data object from stream/url/path to a buffer
 
---------------------------------------------------------------------------------
+## License
 
-The Nodemailer logo was designed by [Sven Kristjansen](https://www.behance.net/kristjansen).
+**MIT**
+
+
+NOTE: updated with files from "npm i" at version 2.0.0
